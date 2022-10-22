@@ -166,7 +166,13 @@ metadata:
   name: externalmetrics.metrics.aws
 spec:
   group: metrics.aws
-  version: v1alpha1
+  versions:
+    - name: v1alpha1
+      served: true
+      storage: true
+      schema: 
+        openAPIV3Schema:
+          type: object
   names:
     kind: ExternalMetric
     plural: externalmetrics
